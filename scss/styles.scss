@@ -1,0 +1,128 @@
+$text-color: rgb(202, 240, 225);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: darkcyan;
+  text-align: center;
+}
+
+#container {
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+#screen {
+  background: #0b2b40;
+  padding: 1rem;
+  width: 31%;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  h3 {
+    color: $text-color;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 5px;
+  }
+}
+
+#btn-div {
+  display: grid;
+  grid-template-columns: repeat(4, 8%);
+  justify-content: center;
+}
+
+button {
+  font-size: 26px;
+  padding: 12px 0;
+  margin: 10px 5px;
+  background: #3b8c6e;
+  color: $text-color;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #48a885;
+}
+
+@media (max-width: 480px) {
+  #container {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  #screen {
+    background: #0b2b40;
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 5px;
+
+    h3 {
+      color: $text-color;
+      font-size: 18px;
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+
+  #btn-div {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+  }
+
+  button {
+    font-size: 24px;
+    padding: 10px 0;
+    margin: 10px 5px;
+    background: #3b8c6e;
+    color: $text-color;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  #container {
+    margin: 1rem auto;
+    padding: 1.2rem;
+  }
+
+  #screen {
+    background: #0b2b40;
+    padding: 1rem;
+    width: 55%;
+    margin: 1rem auto;
+    border-radius: 5px;
+
+    h3 {
+      color: $text-color;
+      font-size: 22px;
+      text-align: right;
+      padding-right: 5px;
+    }
+  }
+
+  #btn-div {
+    display: grid;
+    grid-template-columns: repeat(4, 14%);
+    justify-content: center;
+  }
+
+  button {
+    font-size: 26px;
+    padding: 10px 0;
+    margin: 10px 5px;
+    background: #3b8c6e;
+    color: $text-color;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+}
